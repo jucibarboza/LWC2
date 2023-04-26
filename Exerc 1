@@ -1,0 +1,42 @@
+*****HTML*****
+
+
+<template>
+    <div class="dados">
+    <h1>Lead {primeiroNome} {sobrenome}</h1>
+    <p>Idade: {idade}</p>
+    <p>Email: {email}</p>
+    <p>Classificação: {classificacao}</p>
+    <p>Empresa: {empresa}</p>
+    <p>Receita Anual: {receitaAnual}</p>
+</div>
+</template
+
+
+****JS*****
+
+import { LightningElement } from 'lwc';
+
+export default class Exerc1 extends LightningElement {
+primeiroNome = "Jucilene";
+sobrenome = "Barboza";
+idade = 47;
+email = "meuemai@meuemail.com";
+classificacao = "VIP";
+empresa = "BZA Consultoria.";
+receitaAnual = "R$ 1.000.000,00";
+}
+
+
+*****CSS*****
+import { LightningElement } from 'lwc';
+
+export default class Exerc1 extends LightningElement {
+primeiroNome = "Jucilene";
+sobrenome = "Barboza";
+idade = 47;
+email = "meuemai@meuemail.com";
+classificacao = "VIP";
+empresa = "BZA Consultoria.";
+receitaAnual = "R$ 1.000.000,00";
+}
