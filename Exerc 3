@@ -1,0 +1,80 @@
+********************COMPONENTE EXERC3******************************
+
+
+HTML
+<template>
+    <lightning-card>
+        
+    <h1> <lightning-icon icon-name="standard:lead" alternative-text="lead" title="lead"></lightning-icon>  Lead </h1>
+
+    <c-leada ide="0" tratamento="Mr"  primeironome="João" sobrenome="Pereira" empresa="BZA" status="Closed converted"></c-leada>
+    <c-leada ide="1" tratamento="Ms"  primeironome="Maria" sobrenome="Pereira" empresa="BZA" status="Closed not converted"></c-leada>
+
+    </lightning-card>
+</template>
+
+----------------------------------------------------------------
+
+
+JS
+
+import { LightningElement } from 'lwc';
+
+export default class exerc3 extends LightningElement {}
+
+------------------------------------------------------------------
+CSS
+
+.info{
+    border: 1px solid black;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 300px;
+    background-color: rgb(234, 223, 243);
+}
+
+h1 {
+     border: 1px solid black;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+
+
+
+***********************COMPONENTE LEADA****************************
+
+HTML
+
+<template>
+    <lightning-card>
+        <div class="info">
+           <p> Tratamento: {tratamento}</p>
+           <p> Primeiro Nome: {primeironome}</p>
+           <p> Sobrenome: {sobrenome}</p>
+           <p> Empresa: {empresa}</p>
+           <p> Status: {status}</p>
+       </div>
+       </lightning-card>
+       
+</template>
+
+------------------------------------------------------------
+
+JS
+
+import { LightningElement, api} from 'lwc';
+
+export default class Leada extends LightningElement {
+
+    @api ide;
+    @api tratamento; 
+    @api name;
+    @api sobrenome;
+    @api empresa;
+    @api status;
+}
+
+
