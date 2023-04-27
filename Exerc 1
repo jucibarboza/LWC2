@@ -3,15 +3,17 @@
 
 <template>
     <div class="dados">
-    <h1>Lead {primeiroNome} {sobrenome}</h1>
+
+       
+     <h1> <lightning-icon icon-name="standard:lead" alternative-text="Lead" title="Lead"></lightning-icon>  Lead </lightning-icon></h1>
+    <h1>Nome{primeiroNome} {sobrenome}</h1>
     <p>Idade: {idade}</p>
     <p>Email: {email}</p>
     <p>Classificação: {classificacao}</p>
     <p>Empresa: {empresa}</p>
     <p>Receita Anual: {receitaAnual}</p>
 </div>
-</template
-
+</template>
 
 ****JS*****
 
