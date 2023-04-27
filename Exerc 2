@@ -1,0 +1,85 @@
+********************COMPONENTE EXERC2*********************
+
+HTML:
+<template>
+    <div class="info">
+
+        
+
+        <h1> <lightning-icon icon-name="standard:opportunity" alternative-text="Oportunidade" title="Oportunidade"></lightning-icon>  Oportunidade  </lightning-icon></h1>
+
+    <c-oppsdaconta ide="0" name="Aprovar compra" amount="R$1000" stagename="Fechado"></c-oppsdaconta>
+    <c-oppsdaconta ide="1" name="Aprovar compra" amount="R$1000" stagename="Fechado"></c-oppsdaconta>
+    <c-oppsdaconta ide="2" name="Aprovar compra" amount="R$1000" stagename="Fechado"></c-oppsdaconta>
+    <c-oppsdaconta ide="3" name="Aprovar compra" amount="R$1000" stagename="Fechado"></c-oppsdaconta>
+    <c-oppsdaconta ide="4" name="Aprovar compra" amount="R$1000" stagename="Fechado"></c-oppsdaconta>
+         
+    </div>
+</template>
+
+-----------------------------------------------------------------------
+
+JS:
+
+import { LightningElement } from 'lwc';
+
+export default class exerc2 extends LightningElement {}
+-------------------------------------------------------------------------------------------------
+
+CSS:
+
+.info{
+    border: 1px solid black;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 300px;
+    background-color: rgb(234, 223, 243);
+}
+
+h2 {
+     border: 1px solid black;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+
+********************COMPONENTE OPPSDACONTA*********************
+
+HTML
+
+<template>
+  <lightning-card>
+ <div class="info">
+  <p> ID:{ide}</p>
+  <p> Nome:{name}</p>
+  <p> Valor:{amount}</p>
+  <p> Fase:{stagename}</p>
+</div>
+</lightning-card>
+
+</template>
+  
+  
+  -----------------------------------------------------
+  
+  JS:
+  
+<template>
+  <lightning-card>
+ <div class="info">
+  <p> ID:{ide}</p>
+  <p> Nome:{name}</p>
+  <p> Valor:{amount}</p>
+  <p> Fase:{stagename}</p>
+</div>
+</lightning-card>
+
+</template>
+
+-----------------------------------------------------
+  
+  
+
+
